@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(198, 228, 255);
+    display: grid;
+    place-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    }
+.container{
+    position: relative;
+    margin-top: 40px;
+    height:420px;
+    width: 250px;
+    background-color: #222;
+}
+input {
+   text-align: right;
+   font-family: monospace;
+   font-weight: bold;
+   font-size: 2em;
+   height: 50px; 
+   width: 242px;
+   cursor: not-allowed;
+}
+.row {
+    display: inline-flex;
+    margin-top: 0.5px;
+}
+.cube {
+    margin-top: -3px;
+    margin: 6px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.operators {
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+}
+.nums { 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.plus {
+    height: 110px;
+}
+.position {
+    position: relative;
+    top: -62px
+}
+.equal{
+    border-radius: 40%;
+}
+p a {
+ color: white;
+ font-family: monospace;
+ text-decoration: none;
+ cursor: pointer;
+}
