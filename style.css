@@ -18,8 +18,9 @@ input {
    font-weight: bold;
    font-size: 2em;
    height: 50px; 
-   width: 242px;
+   width: 240px;
    cursor: not-allowed;
+   border: none;
 }
 .row {
     display: inline-flex;
@@ -38,7 +39,7 @@ input {
     cursor: pointer;
 }
 .operators {
-    background-color: rgb(0, 132, 255);
+    background-color: rgb(255, 165, 46);
     color: #fff;
 }
 .nums { 
@@ -60,4 +61,10 @@ p a {
  font-family: monospace;
  text-decoration: none;
  cursor: pointer;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
 }
