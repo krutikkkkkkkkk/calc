@@ -6,43 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator : Reboot13</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="app.js"></script>
 </head>
 <body>
     
     <div class="container">
         <div class="form">
-        <form name="calc">
-     <input type="text" name="eqn"  readonly>
-    </form>
+     <input type="text"  id="eqn"  readonly>
     </div>
         <div class="row">
-            <div class="cube operators" onclick="history.go(0)">AC</div>
-            <div class="cube operators" onclick="document.calc.eqn.value +='%'">%</div>
-            <div class="cube operators" onclick="document.calc.eqn.value +='/'">/</div>
-            <div class="cube operators" onclick="document.calc.eqn.value +='*'">X</div>
+            <div class="cube operators" id="reset" onclick="solveEqn(this.id)">AC</div>
+            <div class="cube operators" id="modulus" onclick="solveEqn(this.id)">%</div>
+            <div class="cube operators" id="div" onclick="solveEqn(this.id)">/</div>
+            <div class="cube operators" id="multiply" onclick="solveEqn(this.id)">X</div>
         </div>
         <div class="row">
-            <div class="cube nums" onclick="document.calc.eqn.value +='7'">7</div>
-            <div class="cube nums" onclick="document.calc.eqn.value +='8'">8</div>
-            <div class="cube nums" onclick="document.calc.eqn.value +='9'">9</div>
-            <div class="cube operators" onclick="document.calc.eqn.value +='-'">-</div>
+            <div class="cube nums" id="7" onclick="solveEqn(this.id)">7</div>
+            <div class="cube nums" id="8" onclick="solveEqn(this.id)">8</div>
+            <div class="cube nums" id="9" onclick="solveEqn(this.id)">9</div>
+            <div class="cube operators" id="sub" onclick="solveEqn(this.id)">-</div>
         </div>
         <div class="row">
-            <div class="cube nums" onclick="document.calc.eqn.value +='4'">4</div>
-            <div class="cube nums" onclick="document.calc.eqn.value +='5'">5</div>
-            <div class="cube nums" onclick="document.calc.eqn.value +='6'">6</div>
-            <div class="cube operators plus" onclick="document.calc.eqn.value +='+'">+</div>
+            <div class="cube nums" id="4" onclick="solveEqn(this.id)">4</div>
+            <div class="cube nums" id="5" onclick="solveEqn(this.id)">5</div>
+            <div class="cube nums" id="6" onclick="solveEqn(this.id)">6</div>
+            <div class="cube operators plus" id="plus" onclick="solveEqn(this.id)">+</div>
         </div>
         <div class="row position">
-            <div class="cube nums" onclick="document.calc.eqn.value +='1'">1</div>
-            <div class="cube nums" onclick="document.calc.eqn.value +='2'">2</div>
-            <div class="cube nums" onclick="document.calc.eqn.value +='3'">3</div>
+            <div class="cube nums" id="1" onclick="solveEqn(this.id)">1</div>
+            <div class="cube nums" id="2" onclick="solveEqn(this.id)">2</div>
+            <div class="cube nums" id="3" onclick="solveEqn(this.id)">3</div>
         </div>
         <div class="row position">
-            <div class="cube nums" onclick="document.calc.eqn.value +='00'">00</div>
-            <div class="cube nums" onclick="document.calc.eqn.value +='0'">0</div>
-            <div class="cube nums" onclick="document.calc.eqn.value +='.'">.</div>
-            <div class="cube operators equal" onclick="document.calc.eqn.value = eval(calc.eqn.value)">=</div>
+            <div class="cube nums" id="00" onclick="solveEqn(this.id)">00</div>
+            <div class="cube nums" id="0" onclick="solveEqn(this.id)">0</div>
+            <div class="cube nums" id="point" onclick="solveEqn(this.id)">.</div>
+            <div class="cube operators equal" id="equal" onclick="solveEqn(this.id)">=</div>
         </div>
 
        <center>
