@@ -1,5 +1,6 @@
 function reset(){
-    history.go(0)
+    let input = document.getElementById("eqn");
+    input.value = "";
 }
 function solveEqn(clicked_id){
     let eqn = clicked_id;
