@@ -1,6 +1,6 @@
 function reset(){
     let input = document.getElementById("eqn");
-    input.value = "";
+    input.value = null;
 }
 function solveEqn(clicked_id){
     let eqn = clicked_id;
