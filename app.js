@@ -1,7 +1,3 @@
-function reset(){
-    let input = document.getElementById("eqn");
-    input.value = null;
-}
 function solveEqn(clicked_id){
     let eqn = clicked_id;
     let input = document.getElementById("eqn");
@@ -28,10 +24,23 @@ function solveEqn(clicked_id){
         input.value = eval(input.value)
     }
     else if(eqn == "reset"){
-        reset()
+        input.value = null
     }
     else {
         input.value += eqn;
     }
 
+}
+
+document.onkeypress = function(e) {
+    let input = document.getElementById("eqn");
+    e = e || window.event;
+    let key = e.keyCode;
+    let keyName = e.key;
+    let keyPressed = String.fromCharCode(key);
+
+
+        if(keyName == "Enter" || keyName == "Equal"){
+            input.value = eval(input.value)
+        }
 }

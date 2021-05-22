@@ -4,23 +4,30 @@ body {
     place-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 10px;
+    background-color: #ececec;
     }
 .container{
     position: relative;
+    padding-top: 2em;
     margin-top: 40px;
-    height:420px;
+    height:430px;
     width: 250px;
-    background-color: #222;
+    background-color: #ececec;
+    border-radius: 2em;
+    box-shadow: -6px -6px 4px rgb(255, 255, 255, 80%),
+    6px 6px 4px rgba(0, 0, 0, 10%);
 }
 input {
    text-align: right;
    font-family: monospace;
+   margin-bottom:0.5em;
    font-weight: bold;
    font-size: 2em;
    height: 50px; 
    width: 240px;
    cursor: not-allowed;
    border: none;
+   border-radius: 5px;
 }
 .row {
     display: inline-flex;
@@ -37,9 +44,11 @@ input {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 50%;
 }
+
 .operators {
-    background-color: rgb(255, 165, 46);
+    background-color: rgb(67, 142, 255);
     color: #fff;
 }
 .nums { 
@@ -48,6 +57,7 @@ input {
 }
 .plus {
     height: 110px;
+    border-radius: 15px;
 }
 .position {
     position: relative;
@@ -57,10 +67,11 @@ input {
     border-radius: 40%;
 }
 p a {
- color: white;
+ color:rgb(67, 142, 255);
  font-family: monospace;
  text-decoration: none;
  cursor: pointer;
+ font-weight: bold;
 }
 .form {
     display: flex;
